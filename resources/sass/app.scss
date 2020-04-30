@@ -1,0 +1,32 @@
+//
+@import "~bulma/sass/utilities/_all";
+
+// Set your colors
+$primary: #ffa41b;
+$primary-invert: findColorInvert($primary);
+$second: #005082;
+$second-invert: findColorInvert($second);
+$twitter: #4099FF;
+$twitter-invert: findColorInvert($twitter);
+$third: #f5f0e3;
+$third-invert: findColorInvert($third);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $light-invert),
+    "dark": ($dark, $dark-invert),
+    "primary": ($primary, $primary-invert),
+    "second": ($second, $second-invert),
+    "info": ($info, $info-invert),
+    "success": ($success, $success-invert),
+    "warning": ($warning, $warning-invert),
+    "danger": ($danger, $danger-invert),
+    "twitter": ($twitter, $twitter-invert),
+    "third": ($third, $third-invert)
+);
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
